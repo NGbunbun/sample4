@@ -477,7 +477,7 @@ h2{
 
 @media screen and (max-width: 768px) {
     .swiper-slide>img{
-        height: 40vh;
+       /* height: 40vh; */
     }
     .img_item{
         transform: translate(0,370px);
