@@ -506,7 +506,7 @@ h2{
         flex-direction: column;
     }
     .about__textBox_text{
-        padding: 0 40px;
+        padding: 0;
     }
     .reviews-slider img{
         width: 16%;
@@ -536,6 +536,10 @@ h2{
         height: 15rem;
         width: 18rem;
      }
+     .reviews-slider img{
+        width: 16%;
+        height: 16%;
+    }
 }
 
 }
