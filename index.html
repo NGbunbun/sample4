@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Website</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!--------------------- ヘッダー ---------------------------->
+        <header id="home">
+            <div class="header_top">
+                <a href="#"><h1>Hotels And Resorts</h1></a>
+                <div class="check_availability"><a href="#reservation" class="btn">空室状況の確認</a></div>
+            </div>
+            <!-- SP用バーガーアイコン -->
+            <i class="fa-solid fa-bars"></i>
+            
+            <nav class="nav">
+                <ul class="nav_menu">
+                    <li class="nav_item"><a href="#home">home</a></li>
+                    <li class="nav_item"><a href="#about">about</a></li>
+                    <li class="nav_item"><a href="#reserve">reservation</a></li>
+                    <li class="nav_item"><a href="#gallery">gallery</a></li>
+                    <li class="nav_item"><a href="#contact">contact</a></li>
+                    <li class="nav_item"><a href="#reviews">reviews</a></li>
+                </ul>
+            </nav>
+
+            <!-- SP用ナビメニュー -->
+            <nav class="nav_sp">
+                <ul class="nav_spmenu">
+                    <li class="spnav_item"><a href="#home">home</a></li>
+                    <li class="spnav_item"><a href="#about">about</a></li>
+                    <li class="spnav_item"><a href="#reserve">reservation</a></li>
+                    <li class="spnav_item"><a href="#gallery">gallery</a></li>
+                    <li class="spnav_item"><a href="#contact">contact</a></li>
+                    <li class="spnav_item"><a href="#reviews">reviews</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--------------------- トップスライダー ---------------------------->
+        <!-- スライダーのコンテナ -->
+        <div class="swiper1">
+            <!-- 必要に応じたwrapper -->
+            <div class="swiper-wrapper">
+                <!-- スライド -->
+                <div class="swiper-slide">
+                    <div class="img_item">
+                        <div class="img_title">Luxurious Rooms</div>
+                        <div class="check_availability"><a href="#reservation" class="btn">空室状況の確認</a></div>
+                    </div>
+                    <img src="images/home-img-1.jpg" alt="home-image1">
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_item">
+                        <div class="img_title">Food And Drinks</div>
+                        <div class="check_availability"><a href="#reserve" class="btn">予約する</a></div>
+                    </div>
+                    <img src="images/home-img-2.jpg" alt="home-image2">
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_item">
+                        <div class="img_title">Luxurious Halls</div>
+                        <div class="check_availability"><a href="#contact" class="btn">お問い合わせ</a></div>
+                    </div>
+                    <img src="images/home-img-3.jpg" alt="home-image3">
+                </div>
+            </div>
+             <!-- ナビボタン -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!--------------------- 空室確認画面 ---------------------------->
+        <section class="reservation" id="reservation">
+            <form action="" method="post">
+                <div class="reservation_datas">
+                    <div class="box">
+                        check in<span>*</span>
+                        <input type="date" name="check_in" class="input" required>
+                    </div>
+                    <div class="box">
+                        check out<span>*</span>
+                        <input type="date" name="check_out" class="input" required>
+                    </div>
+                    <div class="select box">
+                        adults<span>*</span>
+                        <select name="adults" class="input" required>
+                            <option value="1">大人 1人</option>
+                            <option value="2">大人 2人</option>
+                            <option value="3">大人 3人</option>
+                            <option value="4">大人 4人</option>
+                            <option value="5">大人 5人</option>
+                            <option value="6">大人 6人</option>
+                        </select>
+                    </div>
+                    <div class="select box">
+                        childs<span>*</span>
+                        <select name="childs" class="input" required>
+                            <option value="1">子ども なし</option>
+                            <option value="2">子ども 1人</option>
+                            <option value="3">子ども 2人</option>
+                            <option value="4">子ども 3人</option>
+                            <option value="5">子ども 4人</option>
+                            <option value="6">子ども 5人</option>
+                            <option value="7">子ども 6人</option>
+                        </select>
+                    </div>
+                    <div class="select box">
+                        rooms<span>*</span>
+                        <select name="rooms" class="input" required>
+                            <option value="1">1 部屋</option>
+                            <option value="2">2 部屋</option>
+                            <option value="3">3 部屋</option>
+                            <option value="4">4 部屋</option>
+                            <option value="5">5 部屋</option>
+                            <option value="6">6 部屋</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="空室状況の確認" class="btn">
+            </form>
+        </section><!-- /.reservation -->
+
+        <!--------------------- Aboutページ ---------------------------->
+        <section class="about" id="about">
+            <div class="about__box">
+                <div class="about__img">
+                    <img src="images/about-img-1.jpg" alt="">
+                </div>
+                <div class="about__textBox">
+                    <h3 class="about__textBox_title">Best Staff</h3>
+                    <p class="about__textBox_text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <div class="check_availability"><a href="#reserve" class="btn">予約する</a></div>
+                </div>
+            </div>
+            <div class="about__box">
+                <div class="about__img">
+                    <img src="images/about-img-2.jpg" alt="">
+                </div>
+                <div class="about__textBox">
+                    <h3 class="about__textBox_title">Best Foods</h3>
+                    <p class="about__textBox_text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <div class="check_availability"><a href="#contact" class="btn">お問い合わせ</a></div>
+                </div>
+            </div>
+            <div class="about__box">
+                <div class="about__img">
+                    <img src="images/about-img-3.jpg" alt="">
+                </div>
+                <div class="about__textBox">
+                    <h3 class="about__textBox_title">Swimming Pool</h3>
+                    <p class="about__textBox_text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <div class="check_availability"><a href="#reservation" class="btn">空室状況の確認</a></div>
+                </div>
+            </div>
+
+            <!-- アイコン集 -->
+            <div class="icon__wrap">
+                <div class="icon__box">
+                    <img src="images/icon-1.png" alt="">
+                    <h3 class="icon__title">Food & Drinks</h3>
+                    <p class="icon__text">テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="icon__box">
+                    <img src="images/icon-2.png" alt="">
+                    <h3 class="icon__title">Outdoor Dining</h3>
+                    <p class="icon__text">テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="icon__box">
+                    <img src="images/icon-3.png" alt="">
+                    <h3 class="icon__title">Beach View</h3>
+                    <p class="icon__text">テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="icon__box">
+                    <img src="images/icon-4.png" alt="">
+                    <h3 class="icon__title">Decorations</h3>
+                    <p class="icon__text">テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="icon__box">
+                    <img src="images/icon-5.png" alt="">
+                    <h3 class="icon__title">Swimming Pool</h3>
+                    <p class="icon__text">テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="icon__box">
+                    <img src="images/icon-6.png" alt="">
+                    <h3 class="icon__title">Resort Beach</h3>
+                    <p class="icon__text">テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </section><!-- /.about -->
+
+        <!--------------------- 予約画面 ---------------------------->
+        <section class="reserve" id="reserve">
+            <h2>予約する</h2>
+            <form action="" method="post">
+                <div class="reservation_datas">
+                    <div class="box">
+                        check in<span>*</span>
+                        <input type="date" name="check_in" class="input" required>
+                    </div>
+                    <div class="box">
+                        check out<span>*</span>
+                        <input type="date" name="check_out" class="input" required>
+                    </div>
+                    <div class="select box">
+                        adults<span>*</span>
+                        <select name="adults" class="input" required>
+                            <option value="1">大人 1人</option>
+                            <option value="2">大人 2人</option>
+                            <option value="3">大人 3人</option>
+                            <option value="4">大人 4人</option>
+                            <option value="5">大人 5人</option>
+                            <option value="6">大人 6人</option>
+                        </select>
+                    </div>
+                    <div class="select box">
+                        childs<span>*</span>
+                        <select name="childs" class="input" required>
+                            <option value="1">子ども なし</option>
+                            <option value="2">子ども 1人</option>
+                            <option value="3">子ども 2人</option>
+                            <option value="4">子ども 3人</option>
+                            <option value="5">子ども 4人</option>
+                            <option value="6">子ども 5人</option>
+                            <option value="7">子ども 6人</option>
+                        </select>
+                    </div>
+                    <div class="select box">
+                        rooms<span>*</span>
+                        <select name="rooms" class="input" required>
+                            <option value="1">1 部屋</option>
+                            <option value="2">2 部屋</option>
+                            <option value="3">3 部屋</option>
+                            <option value="4">4 部屋</option>
+                            <option value="5">5 部屋</option>
+                            <option value="6">6 部屋</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="空室状況の確認" class="btn">
+            </form>
+        </section><!-- /.reservation -->
+
+        <!--------------------- ギャラリー画面 ---------------------------->
+        <section class="gallery" id="gallery">
+            <div class="swiper gallery-slider">
+                <div class="swiper-wrapper">
+                    <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+                    <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+                    <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+                    <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+                    <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+                    <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--------------------- お問い合わせ画面・F&Q ---------------------------->
+        <section class="contact-fq" id="contact">
+            <div class="contact_wrap">
+                <h2>お問い合わせ</h2>
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="お名前" required><br>
+                    <input type="email" name="email" placeholder="メールアドレス" required><br>
+                    <input type="number" name="number" placeholder="電話番号" required><br>
+                    <textarea name="content" placeholder="本文" cols="50" rows="7"></textarea><br>
+                    <input type="submit" value="送信する" class="btn">
+                </form>
+            </div>
+            <div class="faq-wrap">
+                <h2>よくある質問と回答</h2>
+                <div class="faq_box">
+                    <h3 class="question">キャンセルはどうやるんですか？</h3>
+                    <p class="answer active">
+                        テキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="faq_box">
+                    <h3 class="question">空き部屋はありますか？</h3>
+                    <p class="answer">
+                        テキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="faq_box">
+                    <h3 class="question">お支払い方法は何がありますか？</h3>
+                    <p class="answer">
+                        テキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="faq_box">
+                    <h3 class="question">クーポンコードの受け取り方法は？</h3>
+                    <p class="answer">
+                        テキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="faq_box">
+                    <h3 class="question">年齢の制限はありますか？</h3>
+                    <p class="answer">
+                        テキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- レビューページ ---------------------------->
+        <section class="reviews" id="reviews">
+            <!-- スライダーのコンテナ -->
+            <div class="swiper reviews-slider">
+                <!-- 必要に応じたwrapper -->
+                <div class="swiper-wrapper">
+                    <!-- スライド -->
+                    <div class="swiper-slide">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="review_name">サンプルさん</div>
+                        <p class="review_content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic-2.png" alt="">
+                        <div class="review_name">サンプルさん</div>
+                        <p class="review_content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic-3.png" alt="">
+                        <div class="review_name">サンプルさん</div>
+                        <p class="review_content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic-4.png" alt="">
+                        <div class="review_name">サンプルさん</div>
+                        <p class="review_content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic-5.png" alt="">
+                        <div class="review_name">サンプルさん</div>
+                        <p class="review_content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic-6.png" alt="">
+                        <div class="review_name">サンプルさん</div>
+                        <p class="review_content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--------------------- フッターページ ---------------------------->
+        <section class="footer">
+            <div class="footer_wrap">
+                <div class="footer_box footer_data">
+                    <a href="tel:1234567890">
+                        <i class="fa-solid fa-phone"></i>
+                        +123-456-7890
+                    </a>
+                    <a href="tel:112223333">
+                        <i class="fa-solid fa-phone"></i>
+                        +111-222-3333
+                    </a>
+                    <a href="mailto:sample@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        sample@gmail.com
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        東京都新宿区-400104
+                    </a>
+                </div>
+
+                <div class="footer_box footer_menu">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#reserve">reservation</a>
+                    <a href="#gallery">gallery</a>
+                    <a href="#contact">contact</a>
+                    <a href="#reviews">reviews</a>
+                </div>
+
+                <div class="footer_box footer_sns">
+                    <a href="#">facebook<i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#">twitter<i class="fa-brands fa-twitter"></i></a>
+                    <a href="#">instagram<i class="fa-brands fa-instagram"></i></a>
+                    <a href="#">linkedin<i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div><!-- /.footer_wrap-->
+            <div class="copyright">&copy; copyright @ 2022 by mr.web designer | all rights reseved!</div>
+        </section>
+        
+    </div><!-- /.wrap -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
